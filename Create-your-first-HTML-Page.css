@@ -1,0 +1,38 @@
+#cat-senses-header{
+    margin-left: 45px;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+}
+
+ul{
+    margin-left: 42px;
+}
+
+#cat-image{
+    width: 900px;
+}
+
+#header-difference{
+    border: 1px solid red;
+    text-align: center;
+    color: red;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+td{
+    height: 60px;
+}
+
+.characteristics-behavior-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lion-image{
+    margin-top: 60px;
+    margin-left: 300px;
+    width: 900px;
+}
