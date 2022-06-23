@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatibe" content="IE-edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Landing Page - CSS Flexbox</title>
+    <link rel="stylesheet" type="text/css" href="landing-page-Flexbox-day4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Heebo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+<!--first box-->
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            Gadget
+        </div>
+<!--        Menu Navigation-->
+        <div class="navMenu">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Price</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a href="#">Sign Up</a></li>
+               <li><a href="#" class="active">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+<!--second box-->
+    <div class="content" style="flex-basis: 50%;margin-top: 100px">
+        <div class="content-text" style=" flex-basis: 50%;background-: blue;display: flex; flex-direction: column;
+        justify-content: center;align-items: flex-start;"></div>
+        <h1 style="line-height: 50px">SMART <span style="color: rgb(255,115,9)">SPEAKER</span> <br> FOR ALL SMART HOME</h1>
+        <p style="font-size: 14px;margin-top: 10px">Lorem ipsum dolor sit amet consectetur adipiscing elit.Aliquam repellendus commodi<br>
+            iusto unde. In, earum!</p>
+    </div>
+
+<!--    box with speaker image-->
+    <div class="content-image">
+        <img src="images.jpeg" style="float: right;display: flex;margin-top: -270px;margin-right: 50px">
+    </div>
+
+<!--    last box footer with icons-->
+    <div class="footer">
+        <i class="fa fa-arrow-circle-left arrow" aria-hidden="true"></i>
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <i class="fa fa-arrow-circle-right arrow" aria-hidden="true"></i>
+    </div>
+</div>
+</body>
+</html>
