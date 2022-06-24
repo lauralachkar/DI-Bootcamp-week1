@@ -1,0 +1,140 @@
+
+:root{
+    --primary: #0d6efd;
+    --dark: #21252f;
+    --body: #888;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.0.1)
+}
+
+body{
+    font-family: Sora,"sans-serif";
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1,h2,h3,h5,h6,
+.display-4{
+    color: var(--body);
+    font-weight: 700;
+}
+
+a{
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.navbar-brand{
+    width: 160px;
+}
+
+.navbar .nav-link{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn{
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 0;
+}
+.hero{
+    background-image: url("cultureasy-5-choses-a-savoir-sur-les-aurores-boreales-Eyjafjallajokull-sous-les-aurores-boreales-scaled.webp");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.hero::after{
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+
+
+#section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.card-effect{
+    background-color:#fff;
+    padding: 25%;
+    transition: all 0.35s ease;
+}
+
+.card-effect :hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.iconbox{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bacground-color:var(--primary);
+    font-size: 32px;
+    border-radius: 100px;
+}
+
+.service{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.service::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+}
+
+
+/*The :root selector matches the document's root element.
+In HTML, the root element is always the html element.
+*/
+
+
+/*The var() function is used to insert the value of a CSS variable.
+CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the
+variables with JavaScript, and change the variables based on media queries.A good way to use CSS variables is when it
+comes to the colors of your design. Instead of copy and paste the same colors over and over again, you can place them
+in variables.
+*/
+/*The syntax of the var() function is as follows:
+var(--name, value)*/
+
+
+/*The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.*/
+/*background-attachment: scroll|fixed|local|initial|inherit;*/
+/*scroll	The background image will scroll with the page. This is default
+fixed	The background image will not scroll with the page
+local	The background image will scroll with the element's contents
+initial	Sets this property to its default value. Read about initial
+inherit	Inherits this property from its parent element. Read about inherit*/
+
+
+/*The z-index property in CSS controls the vertical stacking order of elements that overlap. As in, which one appears as
+ if it is physically closer to you. z-index only affects elements that have a position value other than static
+ (the default).Elements can overlap for a variety of reasons, for instance, relative positioning has nudged it over
+ something else. Negative margin has pulled the element over another. Absolutely positioned elements overlap each other.
+  All sorts of reasons.Without any z-index value, elements stack in the order that they appear in the DOM (the lowest
+  one down at the same hierarchy level appears on top). Elements with non-static positioning will always appear on top
+  of elements with default static positioning.Also note that nesting plays a big role. If an element B sits on top of
+  element A, a child element of element A can never be higher than element B.
+
+*/
